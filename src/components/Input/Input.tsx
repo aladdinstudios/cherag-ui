@@ -7,6 +7,7 @@ import type { InputProps } from './types';
 
 const Input = ({
   style,
+  testID = 'InputTestId',
   placeholder,
   onPressLeftIcon,
   onPressRightIcon,
@@ -46,6 +47,7 @@ const Input = ({
       )}
       <TextInput
         {...rest}
+        testID={testID}
         style={[
           style,
           {

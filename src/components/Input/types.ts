@@ -9,6 +9,7 @@ import type {
 export interface InputProps
   extends Omit<ComponentProps<typeof TextInput>, 'children'> {
   style?: StyleProp<ViewStyle>;
+  testID?: string;
   placeholder?: string;
   onPressLeftIcon?: (event: GestureResponderEvent) => void;
   onPressRightIcon?: (event: GestureResponderEvent) => void;
